@@ -53,7 +53,7 @@ function App () {
   const restoreUsers = () => { setUsers(origianlUsers.current) }
   const sortedUsersBy = (orderBy: ORDERBY) => { setOrderBy(orderBy) }
 
-  if (users.length > 0) return (<h1>Cargando...</h1>)
+  if (users.length < 0) return (<h1>Cargando...</h1>)
 
   return (
     <>
